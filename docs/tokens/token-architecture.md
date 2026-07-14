@@ -66,7 +66,7 @@ Core tokens hold every raw value in the system. Hex codes, pixel values, font si
 }
 ```
 
-> **⚠️ Core tokens never alias**
+> **🚫 Core tokens never alias**
 >
 > A core token that aliases another token is a hard violation. Core tokens must always contain resolved values.
 
@@ -84,7 +84,7 @@ The semantic tier is split into three token sets:
 
 Semantic tokens can alias core tokens and other semantic tokens. They must never alias component tokens.
 
-> **⚠️ No color tokens in semantic.json**
+> **🚫 No color tokens in semantic.json**
 >
 > Color tokens belong exclusively in `light.json` and `dark.json`. Putting a color token in `semantic.json` breaks the theming model.
 
