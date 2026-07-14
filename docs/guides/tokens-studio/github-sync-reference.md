@@ -6,7 +6,7 @@ group: Tokens Studio
 nav_order: 2
 ---
 
-This page explains how GitHub sync works and documents every field in the Tokens Studio credentials form. If you just want to get connected, follow the [setup guide]({{ '/docs/tokens-studio/set-up-github-sync/' | relative_url }}).
+This page explains how GitHub sync works and documents every field in the Tokens Studio credentials form. If you just want to get connected, follow the [setup guide]({{ '/docs/guides/tokens-studio/set-up-github-sync/' | relative_url }}).
 
 ## How GitHub sync works
 
@@ -20,7 +20,7 @@ Once connected you can:
 Because the tokens live in GitHub, the repository (not any individual Figma file) holds the source of truth for design decisions. Everyone pulls from the same place, and changes flow back through the same place.
 
 <div class="card-grid">
-  <a class="card" href="{{ '/docs/tokens-studio/set-up-github-sync/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/tokens-studio/set-up-github-sync/' | relative_url }}">
     <h3>🚀 Set up GitHub sync</h3>
     <p>The step-by-step guide to connecting Tokens Studio to GitHub.</p>
   </a>
@@ -40,7 +40,7 @@ The PAT generated for your personal Dawn GitHub account. It lets the plugin auth
 
 > **💡 Generating a PAT**
 >
-> See [Generate a Personal Access Token]({{ '/docs/github/personal-access-token/' | relative_url }}) for how to create one with the right scope.
+> See [Generate a Personal Access Token]({{ '/docs/guides/github/personal-access-token/' | relative_url }}) for how to create one with the right scope.
 
 ### Repository
 

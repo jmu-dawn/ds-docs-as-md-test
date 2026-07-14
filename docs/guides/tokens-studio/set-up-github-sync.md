@@ -6,22 +6,22 @@ group: Tokens Studio
 nav_order: 1
 ---
 
-GitHub holds the source of truth for design tokens. This guide connects Tokens Studio to a repository so you can pull the latest tokens into Figma and push your changes back to the repo. If you want to understand how the sync works or what each credential field means, see the [GitHub sync reference]({{ '/docs/tokens-studio/github-sync-reference/' | relative_url }}).
+GitHub holds the source of truth for design tokens. This guide connects Tokens Studio to a repository so you can pull the latest tokens into Figma and push your changes back to the repo. If you want to understand how the sync works or what each credential field means, see the [GitHub sync reference]({{ '/docs/guides/tokens-studio/github-sync-reference/' | relative_url }}).
 
 ## Before you start
 
 You need three things ready before you connect the sync. If any are missing, the setup will fail.
 
 <div class="card-grid">
-  <a class="card" href="{{ '/docs/github/create-github-account/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/github/create-github-account/' | relative_url }}">
     <h3>👤 GitHub account</h3>
     <p>Set up your Dawn Health GitHub account.</p>
   </a>
-  <a class="card" href="{{ '/docs/github/forking-dawn-design/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/github/forking-dawn-design/' | relative_url }}">
     <h3>📁 Design repository</h3>
     <p>The repo that stores the token files. Ask your Design System Designer if you do not know which repo to use.</p>
   </a>
-  <a class="card" href="{{ '/docs/github/personal-access-token/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/github/personal-access-token/' | relative_url }}">
     <h3>🔑 Personal Access Token in GitHub</h3>
     <p>Create the PAT that lets the plugin authenticate with GitHub.</p>
   </a>
@@ -57,7 +57,7 @@ Complete the form with the values below. Leave **Base URL** empty, we do not use
 Every field is explained in detail, including why we use folder storage and the Pro licence requirement, in the GitHub sync reference:
 
 <div class="card-grid">
-  <a class="card" href="{{ '/docs/tokens-studio/github-sync-reference/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/tokens-studio/github-sync-reference/' | relative_url }}">
     <h3>📖 GitHub sync reference</h3>
     <p>Field-by-field reference for every credential, plus how GitHub sync works.</p>
   </a>
@@ -86,7 +86,7 @@ As you work, the plugin shows push and pull indicators that remind you to keep y
     <h3>📖 Sync changes</h3>
     <p>How to push and pull tokens once your sync is connected. (Coming soon!)</p>
   </a>
-  <a class="card" href="{{ '/docs/github/create-new-release/' | relative_url }}">
+  <a class="card" href="{{ '/docs/guides/github/create-new-release/' | relative_url }}">
     <h3>📖 Creating releases</h3>
     <p>How to create a new release so developers can pull the latest token updates.</p>
   </a>

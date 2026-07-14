@@ -57,7 +57,7 @@ Open the **Tokens Studio** plugin in Figma, then follow the path that applies to
 
 **If you're setting up sync for the first time:**
 
-Follow the [Connect Tokens Studio to GitHub]({{ '/docs/tokens-studio/set-up-github-sync/' | relative_url }}) guide.
+Follow the [Connect Tokens Studio to GitHub]({{ '/docs/guides/tokens-studio/set-up-github-sync/' | relative_url }}) guide.
 
 #### Confirm the connection
 
