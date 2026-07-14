@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero__inner">
+    <h1 class="hero__title">{{ page.hero_title | default: site.title }}</h1>
+    <p class="hero__subtitle">{{ page.hero_subtitle | default: site.description }}</p>
+    <a class="hero__cta" href="{{ '/docs/' | relative_url }}">Browse the docs →</a>
+  </div>
+</section>
+
+<section class="home-body">
+  {{ content }}
+</section>

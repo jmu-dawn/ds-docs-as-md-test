@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="docs-layout">
+  {% include sidebar.html %}
+  <article class="docs-content">
+    <h1 class="docs-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="docs-lede">{{ page.description }}</p>{% endif %}
+    {{ content }}
+  </article>
+</div>

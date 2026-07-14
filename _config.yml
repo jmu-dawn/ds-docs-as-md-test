@@ -1,0 +1,30 @@
+# Site
+title: Design System
+description: Documentation for our design system.
+
+# --- GitHub Pages ---
+# Project site served at https://jmu-dawn.github.io/ds-docs-as-md-test/
+# For a user/org site or a custom domain, set this back to "".
+baseurl: "/ds-docs-as-md-test"
+
+# Clean, extensionless URLs (e.g. /docs/components/button/)
+permalink: pretty
+
+# Markdown / syntax highlighting (both built into GitHub Pages)
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Give every file under docs/ the "doc" layout automatically,
+# so a docs page only needs a title in its front matter.
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: doc
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

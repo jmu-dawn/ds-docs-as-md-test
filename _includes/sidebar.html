@@ -1,0 +1,35 @@
+{%- comment -%}
+Builds the docs sidebar by grouping every page under docs/ by its SOURCE
+subfolder (independent of the permalink style). Each subfolder becomes a group
+heading; the folder name is the label unless a page sets `group:` in its front
+matter. Order within a group is controlled with `nav_order:` (lower = higher).
+{%- endcomment -%}
+{%- assign doc_pages = site.pages | where_exp: "p", "p.path contains 'docs/'" -%}
+{%- assign groups = doc_pages | group_by_exp: "p", "p.path | remove: p.name" | sort: "name" -%}
+<nav class="sidebar" aria-label="Docs navigation">
+  {%- for group in groups -%}
+    {%- assign first = group.items | first -%}
+    {%- assign segs = group.name | split: "/" -%}
+    {%- if first.group -%}
+      {%- assign label = first.group -%}
+    {%- elsif segs.size <= 1 -%}
+      {%- assign label = "Overview" -%}
+    {%- else -%}
+      {%- assign label = segs | last | replace: "-", " " | replace: "_", " " | capitalize -%}
+    {%- endif -%}
+    {%- assign items = group.items | sort: "nav_order" -%}
+    <div class="sidebar__group">
+      <h3 class="sidebar__heading">{{ label }}</h3>
+      <ul class="sidebar__list">
+        {%- for item in items -%}
+        <li>
+          <a href="{{ item.url | relative_url }}"
+             class="sidebar__link{% if item.url == page.url %} is-active{% endif %}">
+            {{ item.title | default: item.name }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endfor -%}
+</nav>
