@@ -1,0 +1,18 @@
+{%- comment -%}
+Renders one sidebar group. Params: include.group (a group_by result) and
+include.label (its heading text). `page` is the current page, for active state.
+{%- endcomment -%}
+{%- assign items = include.group.items | sort: "nav_order" -%}
+<div class="sidebar__group">
+  <h3 class="sidebar__heading">{{ include.label }}</h3>
+  <ul class="sidebar__list">
+    {%- for item in items -%}
+    <li>
+      <a href="{{ item.url | relative_url }}"
+         class="sidebar__link{% if item.url == page.url %} is-active{% endif %}">
+        {{ item.title | default: item.name }}
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

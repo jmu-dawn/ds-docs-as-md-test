@@ -10,6 +10,19 @@ baseurl: "/ds-docs-as-md-test"
 # Clean, extensionless URLs (e.g. /docs/components/button/)
 permalink: pretty
 
+# Sidebar group order. Groups are listed top-to-bottom in this order;
+# any group not listed here falls to the bottom (in natural order).
+# Match each entry to a group's heading label (a folder's `group:` front
+# matter, or the auto-capitalized folder name). Reorder freely.
+nav_group_order:
+  - Overview
+  - Getting started
+  - Tokens
+  - DS3 Tokens
+  - GitHub
+  - Tokens Studio
+  - Components
+
 # Markdown / syntax highlighting (both built into GitHub Pages)
 markdown: kramdown
 kramdown:
